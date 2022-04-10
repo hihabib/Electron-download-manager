@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="./materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+    .main {
+      display: flex;
+      flex-direction: column;
+      row-gap: 15px;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      -webkit-app-region: drag;
+      user-select: none;
+    }
+    button, a, i {
+      -webkit-app-region: no-drag;
+      cursor: pointer;
+    }
+    .frame {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      color: gray;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="frame">
+    <i class="material-icons small close">close</i>
+  </div>
+  <div class="container">
+    <div class="main">
+      <div style="display: flex; justify-content:center; column-gap: 20px;">
+        <button class="waves-effect blue darken-1 btn" id="addDownload">Add Download Link</button>
+      <a class="btn blue darken-1 waves-effect" id="link" href="" download>Start Download</a>
+      </div>
+
+      <div class="progress">
+        <div class="determinate" style="width: 0%"></div>
+      </div>
+      <div class="size"></div>
+      <!-- <progress id="file" value="0" max="100"> 32% </progress> -->
+      <button class="btn waves-effect teal darken-1" id="pause">pause</button>
+      <button class="btn waves-effect teal darken-1" id="resume">resume</button>
+      <button class="btn waves-effect teal darken-1" id="cancel">Cancel</button>
+    </div>
+  </div>
+  <script src="./materialize.min.js"></script>
+</body>
+
+</html>

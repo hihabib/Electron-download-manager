@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Download Link</title>
+    <link rel="stylesheet" href="./materialize.min.css">
+
+    <style>
+        .main {
+            display: flex;
+            flex-direction: column;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            user-select: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <div>
+                <div class="input-field col s12">
+                    <input id="downloadLink" type="text" class="validate">
+                    <label for="downloadLink">Link</label>
+                    <span class="helper-text" data-error="wrong" data-success="right">Enter your download link</span>
+                  </div>
+            </div>
+            <div>
+                <a class="waves-effect brown btn" id="download">Download</a>
+                <a class="waves-effect grey lighten-1 btn" id="cancel">cancel</a>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./materialize.min.js"></script>
+</body>
+</html>
